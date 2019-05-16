@@ -1,0 +1,60 @@
+﻿@model RugbyApp.ViewModels.JuniorParent
+
+@{
+    ViewBag.Title = "details2";
+}
+
+<h2>details2</h2>
+
+<div>
+    <h4>JuniorParent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.juniors.FName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.juniors.FName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.juniors.LName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.juniors.LName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.juniors.DOB)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.juniors.DOB)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.juniors.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.juniors.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.juniors.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.juniors.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.juniors.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.juniors.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.parents.p1FName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.parents.p1FName)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

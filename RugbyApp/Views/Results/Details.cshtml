@@ -1,0 +1,51 @@
+﻿@model RugbyApp.Models.Results
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Results</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Home)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Home)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Away)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Away)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

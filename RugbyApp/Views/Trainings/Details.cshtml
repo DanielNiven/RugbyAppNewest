@@ -1,0 +1,114 @@
+﻿@model RugbyApp.Models.Training
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Training</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PassingStandard)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassingStandard)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassingPop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassingPop)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassingSpin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassingSpin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TacklingFront)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TacklingFront)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TacklingSide)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TacklingSide)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TacklingRear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TacklingRear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TacklingScrum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TacklingScrum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KickingDrop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KickingDrop)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KickingGrubber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KickingGrubber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KickingPunt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KickingPunt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KickingGoal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KickingGoal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CommentBox)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CommentBox)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

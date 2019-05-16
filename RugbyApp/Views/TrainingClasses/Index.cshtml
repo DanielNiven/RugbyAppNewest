@@ -1,0 +1,106 @@
+﻿@model IEnumerable<RugbyApp.Models.TrainingClass>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PassingStandard)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassingSpin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassingPop)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TacklingFront)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TacklingRear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TacklingSide)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TacklingScrum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KickDrop)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KickGrubber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KickPunt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KickGoal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CommentBox)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainingID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassingStandard)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassingSpin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassingPop)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TacklingFront)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TacklingRear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TacklingSide)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TacklingScrum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KickDrop)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KickGrubber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KickPunt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KickGoal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CommentBox)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TrainingID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

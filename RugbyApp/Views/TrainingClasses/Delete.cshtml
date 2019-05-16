@@ -1,0 +1,129 @@
+﻿@model RugbyApp.Models.TrainingClass
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TrainingClass</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PassingStandard)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassingStandard)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassingSpin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassingSpin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassingPop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassingPop)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TacklingFront)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TacklingFront)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TacklingRear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TacklingRear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TacklingSide)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TacklingSide)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TacklingScrum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TacklingScrum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KickDrop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KickDrop)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KickGrubber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KickGrubber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KickPunt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KickPunt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KickGoal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KickGoal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CommentBox)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CommentBox)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainingID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainingID)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
