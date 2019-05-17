@@ -34,7 +34,8 @@ namespace RugbyApp.Models.Juniors
         public string Email { get; set; } //String email declared
         public string Position { get; set; } //String position declared
 
+        public int ParentId { get; set; }
         [NotMapped] //This overrides the normal convention
-        public ParentsDetails parents; //Calls the parent 
+        public ParentsDetails parents { get; set; }//Calls the parent 
     }
 }

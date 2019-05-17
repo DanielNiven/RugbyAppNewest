@@ -33,6 +33,7 @@ namespace RugbyApp.Models.Juniors
         public string p2PhoneNumber { get; set; }
 
         public int JuniorId { get; set; }
+        // Navigation property
         public JuniorsDetails juniors { get; set; }
     }
 }

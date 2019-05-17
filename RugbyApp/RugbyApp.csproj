@@ -197,6 +197,10 @@
     <Compile Include="Migrations\201905161430385_SeniorsU2D.Designer.cs">
       <DependentUpon>201905161430385_SeniorsU2D.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905171320549_associate.cs" />
+    <Compile Include="Migrations\201905171320549_associate.Designer.cs">
+      <DependentUpon>201905171320549_associate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\Juniors\JuniorsDetails.cs" />
@@ -332,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905161430385_SeniorsU2D.resx">
       <DependentUpon>201905161430385_SeniorsU2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905171320549_associate.resx">
+      <DependentUpon>201905171320549_associate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

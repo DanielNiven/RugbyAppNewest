@@ -9,6 +9,7 @@ namespace RugbyApp.Models
 {
     public class Results
     {
+        //Variables for results page declared
         public int ID { get; set; }
         public String Home { get; set; }
         public String VS { get; set; }

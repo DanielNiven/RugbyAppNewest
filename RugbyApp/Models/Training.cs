@@ -8,6 +8,8 @@ namespace RugbyApp.Models
 {
     public class Training
     {
+        //Variables for Training declared
+        //Primary key
         [Key]
         public int id { get; set; }
         [Required(ErrorMessage = "Enter a value 1 to 10  ")]
